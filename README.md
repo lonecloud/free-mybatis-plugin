@@ -44,7 +44,3 @@ free-mybatis-plugin是一个提高mybatis编码的插件。实现了dao代码跳
 - better-mybatis-generator https://github.com/kmaster/better-mybatis-generator
 - mybatis-generator-gui https://github.com/zouzg/mybatis-generator-gui
 - MyBatisCodeHelper-Pro https://github.com/gejun123456/MyBatisCodeHelper-Pro
-## 我的微信公众号 - it新技术
-更多内容，欢迎关注公众号 【it新技术】
-- ![](https://images.gitee.com/uploads/images/2020/0121/151850_6e6ac5da_131460.jpeg)
-![](https://images.gitee.com/uploads/images/2020/0121/151850_003d690f_131460.jpeg)
