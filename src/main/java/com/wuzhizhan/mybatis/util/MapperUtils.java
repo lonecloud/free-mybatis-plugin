@@ -26,6 +26,8 @@ import java.util.*;
  */
 public final class MapperUtils {
 
+    public static final String SPLIT_CHAR = "#";
+
     private MapperUtils() {
         throw new UnsupportedOperationException();
     }
@@ -131,6 +133,9 @@ public final class MapperUtils {
     @NonNls
     public static String getNamespace(@NotNull Mapper mapper) {
         String ns = mapper.getNamespace().getStringValue();
+        if (!StringUtils.isEmpty(ns) && ns.contains(SPLIT_CHAR)) {
+            ns = ns.substring(0, ns.lastIndexOf(SPLIT_CHAR));
+        }
         return null == ns ? "" : ns;
     }
 

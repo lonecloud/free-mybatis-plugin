@@ -20,6 +20,7 @@
         <li>快速从代码跳转到mapper及从mapper返回代码</li>
         <li>mybatis自动补全及语法错误提示</li>
         <li>集成mybatis generator gui界面</li>
+        <li>新增#多数据源兼容提醒</li>
     </ul>
     ]]></description>
 
