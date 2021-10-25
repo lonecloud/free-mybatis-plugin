@@ -5,7 +5,7 @@
 
     <description><![CDATA[
           Free Mybatis plugin <br/>
-          This Plugin is fork from https://github.com/rockjava/intellij-mybatis-plugin
+          兼容#pgms等多数据源跳转改造
       ]]></description>
 
     <idea-version since-build="145"/>

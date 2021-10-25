@@ -24,6 +24,7 @@ import com.wuzhizhan.mybatis.dom.model.Mapper;
 import com.wuzhizhan.mybatis.dom.model.TypeAlias;
 import com.wuzhizhan.mybatis.dom.model.TypeAliases;
 
+import org.apache.commons.lang.StringUtils;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -38,6 +39,8 @@ import java.util.Properties;
  * @author yanglin
  */
 public final class MapperUtils {
+
+    public static final String SPLIT_CHAR = "#";
 
     private MapperUtils() {
         throw new UnsupportedOperationException();
@@ -144,6 +147,9 @@ public final class MapperUtils {
     @NonNls
     public static String getNamespace(@NotNull Mapper mapper) {
         String ns = mapper.getNamespace().getStringValue();
+        if (!StringUtils.isEmpty(ns) && ns.contains(SPLIT_CHAR)) {
+            ns = ns.substring(0, ns.lastIndexOf(SPLIT_CHAR));
+        }
         return null == ns ? "" : ns;
     }
 
